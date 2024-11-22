@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trainer-box {
+    width: 22%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: all 0.3s ease;
+    position: relative;
+    margin-bottom: 20px;
+}
+.trainer-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.trainer-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.trainer-box:hover .trainer-image {
+    filter: brightness(70%);
+}
+.trainer-info {
+    padding: 20px;
+    text-align: center;
+}
+.trainer-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.trainer-info p {
+    color: #777;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.trainer-info a {
+    text-decoration: none;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.trainer-info a:hover {
+    background-color: #ff4500;
+}
+#h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+}
+/* contact css */
+/* Basic Styles for the Form */
+#contact {
+    background-color: #f7f7f7;
+    padding-top: 100px;
+}
+
+#contact form {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+#contact form:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+#contact input, #contact textarea, #contact button {
+    transition: all 0.3s ease;
+}
+
+/* Focus and Hover Effects for Input Fields */
+input:focus, textarea:focus, button:hover {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Smooth Transitions on Textarea */
+textarea:focus {
+    border-color: #3b82f6;
+    background-color: #f0f9ff;
+}
+
+/* Form Success/Error Messages */
+#form-message, #form-error {
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+/* Button animation when hovered */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.6);
+}
+span{
+    font-size: 30px;
+}
+
+/* trainers 1 */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* trainer1 */
+  /* Applying pulse animation to the button */
+  .button-pulse {
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+    
+  /* trainer2 */
+/* Smooth scaling and background color transition for button */
+button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #38b2ac; /* Change to a teal color on hover */
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+    /*trainer 3  */
+/* Button hover animation with smooth scaling and background color change */
+button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #e53e3e; /* Darker red on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Adding shadow */
+  }
+    /* tariner  4  */
+    /* Button hover animation with smooth scaling and background color change */
+button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #805ad5; /* Darker purple on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Adding shadow */
+  }
+   /* Add CSS for Dynamic Hover and Animation Effects  */
+
+    .category-box {
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1);
+    }
+
+    .category-box:hover {
+        transform: scale(1.05);
+    }
+
+    .category-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .category-card:hover {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-10px);
+    }
+
+    .category-image {
+        width: 100%;
+        height: 200px; /* Fixed height */
+        object-fit: cover;
+        transition: all 0.3s ease;
+    }
+
+    .category-card:hover .category-image {
+        filter: brightness(70%);
+    }
+
+    .category-info {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .category-title {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .category-description {
+        font-size: 1rem;
+        color: #777;
+        margin-bottom: 20px;
+    }
+
+    .category-card:hover .category-title {
+        color: #ff6347; /* Change title color on hover */
+    }
+
+    .category-card:hover .category-description {
+        color: #333; /* Darken description on hover */
+    }
+  
